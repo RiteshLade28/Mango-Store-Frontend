@@ -102,7 +102,7 @@ const MobileNav = () => {
   );
 };
 
-const MobileNavItem = ({ label, href }: NavItem) => {
+const MobileNavItem = ({ label, nav, href }: NavItem) => {
   return (
     <Flex
       py={2}
@@ -114,9 +114,9 @@ const MobileNavItem = ({ label, href }: NavItem) => {
         textDecoration: "none",
       }}
     >
-      <Text fontWeight={600} color={"#4F200D"}>
-        {label}
-      </Text>
+      <NavLink activeClassName="active" to={nav} key={label}>
+        <p>{label}</p>
+      </NavLink>
     </Flex>
   );
 };

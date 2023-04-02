@@ -10,7 +10,7 @@ const About = () => {
         display={"flex"}
         justifyContent={"center"}
         flexDirection={"column"}
-        padding={"100px"}
+        padding={{ base: "24px", md: "40px", lg: "100px" }}
         bgColor={"#FFD93D"}
         color={"#4F200D"}
         fontSize="xl"
